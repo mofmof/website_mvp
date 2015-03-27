@@ -1,0 +1,248 @@
+@import "reset.less";
+
+
+// フォント
+// @font_normal: Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+// @font_meiryo: Meiryo,sans-serif;
+
+// @font_normal: "Hiragino Kaku Gothic Pro", "Meiryo", "MS PGothic", sans-serif;;
+
+
+
+// カラー
+@smorkyblue: #506FA4;
+@navyblue: #144B8A;
+@skyblue: #52AAD6;
+// @olive: #7A9F55;
+@olive: #B8E986;
+@lightgreen: #B9D158;
+@lightgreen2: #96C800;
+@red: #a94442;
+
+
+// alpha
+.bgalpha_b {
+  background-color: rgba(0,0,0,0.4);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+  *zoom: 1;
+}
+
+.bgalpha_w {
+  background-color: rgba(255,255,255,0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99ffffff', endColorstr='#99ffffff');
+  *zoom: 1;
+}
+
+.bgalpha_g {
+  background-color: rgba(185,209,88,0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99B9D158', endColorstr='#997A9F55');
+  *zoom: 1;
+}
+
+.bgalpha_bl {
+  background-color: rgba(110,184,212,0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#996EB8D4', endColorstr='#997A9F55');
+  *zoom: 1;
+}
+
+//img
+.img_round {
+	width: 140px;
+	height: 140px;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 15px;
+	background: #eee;
+}
+
+
+//フォームカスタム
+.form-control.form_base {
+	height: 44px;
+	border-radius: 0px;
+	padding: 10px 12px;
+	// box-shadow: none;
+}
+
+textarea.form-control.form_base {
+	height: auto;
+}
+
+select.form-control.form_base {
+	border-radius: 0px;
+}
+
+span.req {
+	padding: 0 5px;
+	border: solid 1px @smorkyblue;
+	border-radius: 2px;
+	font-size: 12px;
+	color: @smorkyblue;
+	margin-left: 15px;
+	position: relative;
+	top: -1px;
+	// background: @smorkyblue;
+}
+span.msg_error {
+	padding-left: 20px;	
+	color: @red;
+}
+
+//カスタムセレクト
+.customSelect { 
+	border-radius: 0;
+	background: url(../images/select_arrow.png) no-repeat;
+	background-position: right 50%;
+	padding-right: 20px;
+}
+
+.customSelect.customSelectHover {
+/* Styles for when the select box is hovered */
+}
+
+.customSelect.customSelectOpen {
+/* Styles for when the select box is open */
+}
+
+.customSelect.customSelectFocus {
+/* Styles for when the select box is in focus */
+}
+
+.customSelectInner {
+/* You can style the inner box too */
+}
+
+.panel-red {
+	border-radius: 0;
+	border-top: solid 1px #eee;
+	border-right: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+	border-left: solid 1px #eee;
+	color: @red;
+	background: #f8f8f8;
+	font-weight: bold;
+	.panel-heading {
+		border-radius: 0;
+		background: @red;
+		// background: lighten(@red, 15%);
+		.panel-title {
+			position: relative;
+			color: #fff;
+			padding-left: 18px;
+			&:before {
+				position: absolute;
+				// position: relative;
+				display: block;
+				content: "";
+				top: 1px;
+				left: -5px;
+				width: 17px;
+				height: 17px;
+				border-radius: 50%;
+				// background: lighten(@red, 30%);
+				border: solid 5px lighten(@red, 30%);
+			}
+		}
+	}
+	ul {
+		li {
+			position: relative;
+			padding-left: 21px;
+			&:before {
+				position: relative;
+				top: 16px;
+				left: -13px;
+				display: block;
+				content: "";
+				width: 4px;
+				height: 4px;
+				background: @red;
+			}
+		}
+	}
+}
+
+
+
+//ボタンカスタム
+.btn_base {
+	border-color: transparent;
+	border-radius: 2px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 16px;
+}
+
+.btn_base2 {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	border-color: transparent;
+	border-radius: 2px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	// top: -26px;
+}
+
+@media (max-width: 768px) {
+	.btn_base2 {
+		width: 100%;
+		top: auto;
+	}
+}
+
+
+.btn_smorkyblue {
+	background: @smorkyblue;
+	color: #fff;
+	border-bottom: solid 3px darken(@smorkyblue, 15%);
+	&:hover {
+		background: #000;
+		background: lighten(@smorkyblue, 15%);
+		border-bottom: solid 3px lighten(@smorkyblue, 5%);
+		color: #fff;
+	}
+}
+
+
+
+.btn_sizem {
+	width: 200px;
+}
+
+//余白
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.mb15 {
+	margin-bottom: 15px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mb25 {
+	margin-bottom: 25px;
+}
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
