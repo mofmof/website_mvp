@@ -35,7 +35,7 @@
 }
 
 .bgalpha_w2 {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.6);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99ffffff', endColorstr='#99ffffff');
   *zoom: 1;
 }
@@ -321,7 +321,7 @@ body {
 			display: block;
 			padding: 10px;
 			border: solid 2px #fff;
-			// text-shadow: 1px 1px 10px #888;
+			text-shadow: 1px 1px 10px #888;
 			.bgalpha_w;
 			text-decoration: none;
 			font-size: 40px;
@@ -332,6 +332,7 @@ body {
 			&:hover {
 				background: #fff;
 				color: @org;
+				text-shadow: none;
 			}
 		}
 		.btn_more {
@@ -472,8 +473,11 @@ body {
 
 #content03 {
 	.flow {
+		width: 50%;
+		max-width: 450px;
+		margin: 0 auto;
 		p {
-			width: 50%;
+			width: 100%;
 			margin: 0 auto;
 			color: #fff;
 			text-align: center;
