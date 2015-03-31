@@ -12,7 +12,6 @@ $(function(){
 	  });
 
     //ファーストビューアニメーション
-
     $(".logoarea").hide();
     $(".catch01").hide();
     $(".catch02").hide();

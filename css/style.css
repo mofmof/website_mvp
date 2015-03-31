@@ -174,124 +174,6 @@ a:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99ffffff', endColorstr='#99ffffff');
   *zoom: 1;
 }
-.bgalpha_g {
-  background-color: rgba(185, 209, 88, 0.5);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99B9D158', endColorstr='#997A9F55');
-  *zoom: 1;
-}
-.bgalpha_bl {
-  background-color: rgba(110, 184, 212, 0.5);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#996EB8D4', endColorstr='#997A9F55');
-  *zoom: 1;
-}
-.img_round {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 15px;
-  background: #eee;
-}
-.form-control.form_base {
-  height: 44px;
-  border-radius: 0px;
-  padding: 10px 12px;
-}
-textarea.form-control.form_base {
-  height: auto;
-}
-select.form-control.form_base {
-  border-radius: 0px;
-}
-.customSelect {
-  border-radius: 0;
-  background: url(../images/select_arrow.png) no-repeat;
-  background-position: right 50%;
-  padding-right: 20px;
-}
-.customSelect.customSelectHover {
-  /* Styles for when the select box is hovered */
-}
-.customSelect.customSelectOpen {
-  /* Styles for when the select box is open */
-}
-.customSelect.customSelectFocus {
-  /* Styles for when the select box is in focus */
-}
-.customSelectInner {
-  /* You can style the inner box too */
-}
-.panel-red {
-  border-radius: 0;
-  border-top: solid 1px #eee;
-  border-right: solid 1px #eee;
-  border-bottom: solid 1px #eee;
-  border-left: solid 1px #eee;
-  color: #b30218;
-  background: #f8f8f8;
-  font-weight: bold;
-}
-.panel-red .panel-heading {
-  border-radius: 0;
-  background: #b30218;
-}
-.panel-red .panel-heading .panel-title {
-  position: relative;
-  color: #fff;
-  padding-left: 18px;
-}
-.panel-red .panel-heading .panel-title:before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 1px;
-  left: -5px;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  border: solid 5px #fd5166;
-}
-.panel-red ul li {
-  position: relative;
-  padding-left: 21px;
-}
-.panel-red ul li:before {
-  position: relative;
-  top: 16px;
-  left: -13px;
-  display: block;
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: #b30218;
-}
-.btn_base {
-  border-color: transparent;
-  border-radius: 2px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: 16px;
-}
-.btn_base2 {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  border-color: transparent;
-  border-radius: 2px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-@media (max-width: 768px) {
-  .btn_base2 {
-    width: 100%;
-    top: auto;
-  }
-}
-.btn_sizem {
-  width: 200px;
-}
 .mb10 {
   margin-bottom: 10px;
 }
@@ -306,6 +188,48 @@ select.form-control.form_base {
 }
 .mb30 {
   margin-bottom: 30px;
+}
+.mb40 {
+  margin-bottom: 30px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml10p {
+  margin-left: 10%;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml20p {
+  margin-left: 20%;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.ml30p {
+  margin-left: 30%;
+}
+.fz20 {
+  font-size: 20px;
+}
+.fz30 {
+  font-size: 30px;
+}
+.color_red {
+  color: #b30218;
+}
+.color_blu {
+  color: #4eadca;
+}
+.color_org {
+  color: #f5a623;
 }
 body {
   background: url(../images/bg.png);
@@ -434,6 +358,12 @@ body {
   top: 4px;
   margin-right: 5px;
 }
+.vmg2#content01 {
+  background: url(../images/vimg2.jpg) no-repeat top center;
+}
+.vmg3#content01 {
+  background: url(../images/vimg3.jpg) no-repeat top center;
+}
 @media (max-width: 768px) {
   #content01 .logo {
     width: 100px;
@@ -542,6 +472,16 @@ body {
   padding-right: 18px;
   top: 10px;
 }
+#content02 h2 i,
+#content03 h2 i,
+#content04 h2 i,
+#content05 h2 i {
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10px;
+  font-size: 38px;
+  top: 3px;
+}
 #content03 .flow {
   width: 50%;
   max-width: 450px;
@@ -626,44 +566,111 @@ body {
   top: -160px;
   padding-top: 70px;
 }
+#content05 {
+  background: url(../images/bg_last.png);
+  min-height: 300px;
+}
+#inquiry {
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 2px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#inquiry p {
+  color: #555;
+  font-size: 16px;
+}
+#inquiry p.coname {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 3px 2px #fff;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+#inquiry p.coname span {
+  position: relative;
+  left: -10px;
+  font-size: 24px;
+  font-weight: normal;
+}
+#inquiry p.courl a {
+  color: #b30218;
+  font-weight: bold;
+  font-size: 18px;
+}
+#inquiry .btn_i {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: 1px 1px 2px #888;
+  font-size: 26px;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 1px 2px 2px #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99ffffff', endColorstr='#99ffffff');
+  *zoom: 1;
+  text-decoration: none;
+}
+#inquiry .btn_i:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #b30218;
+  text-shadow: none;
+}
+#inquiry .btn_i i {
+  margin-right: 15px;
+}
+@media (max-width: 768px) {
+  #content01,
+  #content02,
+  #content03,
+  #content04,
+  #content05 {
+    min-height: initial;
+  }
+  #inquiry {
+    width: 100%;
+  }
+  #inquiry p.coname {
+    font-size: 28px;
+  }
+  #inquiry p.coname span {
+    font-size: 18px;
+  }
+}
 ul.list_note {
   max-width: 500px;
   margin: 0 auto;
-  padding-bottom: 60px;
+  margin-bottom: 50px;
   position: relative;
 }
 ul.list_note li {
   position: relative;
-  padding-left: 80px;
   line-height: 80px;
   font-size: 26px;
   color: #b30218;
 }
-ul.list_note li:before {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  display: block;
-  content: "";
-  background: url(../images/ico_check.png) no-repeat;
+ul.list_note li i {
+  position: relative;
+  top: 6px;
+  margin-right: 20px;
+  font-size: 40px;
 }
 @media (max-width: 768px) {
+  ul.list_note {
+    max-width: auto;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 0;
+  }
   ul.list_note li {
     font-size: 16px;
-    padding-left: 40px;
-  }
-  ul.list_note li:before {
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    display: block;
-    content: "";
-    background: url(../images/ico_check.png) no-repeat;
-    background-size: cover;
   }
 }
 .totop {
