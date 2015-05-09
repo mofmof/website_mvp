@@ -397,6 +397,10 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
+.text_ex p {
+  padding: 10px 0;
+  line-height: 1.7;
+}
 .text_ex strong {
   font-weight: bold;
   display: block;
@@ -657,12 +661,27 @@ ul.list_note li {
   font-size: 26px;
   color: #b30218;
   margin-bottom: 50px;
+  padding-left: 56px;
 }
-ul.list_note li i {
-  position: relative;
-  top: 6px;
-  margin-right: 20px;
-  font-size: 40px;
+ul.list_note li.qual:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  content: "\f046";
+  top: -6px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 38px;
+}
+ul.list_note li.agree:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  content: "\f071";
+  top: -2px;
+  left: 2px;
+  width: 36px;
+  height: 36px;
+  font-size: 34px;
 }
 @media (max-width: 768px) {
   ul.list_note {
