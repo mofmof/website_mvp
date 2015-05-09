@@ -645,16 +645,18 @@ body {
   }
 }
 ul.list_note {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
+  padding-top: 30px;
   margin-bottom: 50px;
   position: relative;
 }
 ul.list_note li {
   position: relative;
-  line-height: 80px;
+  line-height: 1.5;
   font-size: 26px;
   color: #b30218;
+  margin-bottom: 50px;
 }
 ul.list_note li i {
   position: relative;
